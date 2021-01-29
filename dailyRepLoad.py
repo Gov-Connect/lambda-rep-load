@@ -21,6 +21,11 @@ def saveData(URL, headers, outputFile):
     df = json.loads(response.text)
     outputDF = pd.DataFrame(df['results'][0]['members'])
 
+    ## add photoURL based on https://theunitedstates.io/images/congress/450x550/O000172.jpg
+    for i, row in outputDF.iterrows():
+        photo_url = "https://theunitedstates.io/images/congress/450x550/" + row.id + ".jpg"
+        outputDF.loc[i,"photo_url"] = photo_url
+
     csv_buffer = StringIO()
     outputDF.to_csv(csv_buffer)
     s3.Object(bucket, outputFilePath).put(Body=csv_buffer.getvalue())
@@ -43,7 +48,7 @@ def main():
 
 
 # if __name__ == "__main__":
-    # main()
+#     main()
 
 def lambda_handler(event, lambda_context):
     main()
