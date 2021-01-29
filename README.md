@@ -22,13 +22,13 @@ install two libraries (boto3 and pyyaml; installing all packages in 'lib'):
 navigate to virtual environment packages folder:  
 `cd ../augment-reps/lib/python3.8/site-packages`  
 zip contents of all packages and place zip file in project folder:  
-`zip -r  ../../../../augment-representatives/augment-representatives.zip .`  
+`zip -r  ../../../../lambda-rep-load/lambda-rep-load.zip .`  
 navigate back to project folder:  
- `cd ../../../../augment-representatives/`  
+ `cd ../../../../lambda-rep-load/`  
 add script (and any other files, like keys) to zip file:  
- `zip -g augment-representatives.zip dailyRepLoad.py keys.yml`  
+ `zip -g lambda-rep-load.zip dailyRepLoad.py keys.yml`  
 copy zip file to S3 to be used in AWS lambda:  
- `aws s3 cp augment-representatives.zip s3://gov-connect`  
+ `aws s3 cp lambda-rep-load.zip s3://gov-connect`  
 
 
 ### AWS Lambda set up  
