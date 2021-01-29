@@ -3,14 +3,14 @@
 ## Set up AWS EC2 instance (for replicating lambda environment)  
   
 ### Create EC2 Instance on AWS Console  
-[Set up key pairs and security group]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html  
-[Ensure IAM role has access to S3]: https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/  
-[Launch the instance and connect]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html  
-[Connect to instance through S3]: https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/  
+Set up key pairs and security group: <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/get-set-up-for-amazon-ec2.html>  
+Ensure IAM role has access to S3: <https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/>  
+Launch the instance and connect: <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html>  
+Connect to instance through S3: <https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-access-s3-bucket/>  
   
 ### Set up env on EC2  
-[Install Python 3.X (don't need final steps of installing EB CLI)]: https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html  
-[Set up virtual environment]: https://coffieldweb.com/weblog/2019/09/03/install-python-3-pip-3-and-virtualenv-amazon-linux-2/  
+Install Python 3.X (don't need final steps of installing EB CLI): <https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install-linux.html>  
+Set up virtual environment: <https://coffieldweb.com/weblog/2019/09/03/install-python-3-pip-3-and-virtualenv-amazon-linux-2/>  
 #### install git:  
 `sudo yum install git -y`  
 [git user name and email]: https://docs.github.com/en/github/getting-started-with-github/set-up-git  
